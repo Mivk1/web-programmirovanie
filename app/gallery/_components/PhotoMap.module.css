@@ -1,0 +1,18 @@
+﻿.section {
+    margin-top: 48px;
+}
+
+.canvas {
+    width: 100%;
+    height: clamp(18rem, 50vh, 30rem);
+    overflow: hidden;
+    border: 1px solid #b9c0c8;
+    border-radius: clamp(10px, 2vw, 16px);
+    background: #dbe3ea;
+}
+
+.status {
+    padding: 12px 14px;
+    border-left: 4px solid #2e7d32;
+    background: #e9f2f8;
+}

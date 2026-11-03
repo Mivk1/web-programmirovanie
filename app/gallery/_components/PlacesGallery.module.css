@@ -1,0 +1,68 @@
+/* Горизонтальная сетка */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+    gap: 18px;
+    margin-top: 24px;
+}
+
+/* Карточка */
+.card {
+    display: grid;
+    gap: 10px;
+    overflow: hidden;
+    padding: 0 0 18px;
+    border: 1px solid #d7d2c8;
+    border-radius: 14px;
+    background: #ffffff;
+    color: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
+    .card:focus-visible {
+        outline: 4px solid #2e7d32;
+        outline-offset: 4px;
+    }
+
+/* Обертка для картинки */
+.imageWrap {
+    position: relative;
+    display: block;
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+    background: #d9dde2;
+}
+
+.image {
+    object-fit: cover;
+}
+
+/* Текст */
+.title, .summary {
+    padding: 0 16px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 4px;
+}
+
+.summary {
+    line-height: 1.5;
+    color: #52606d;
+}
+
+.demoNote {
+    margin: 18px 0 32px;
+    color: #334155;
+}
+
+/* Включает hover-эффект только для точного указателя (мыши) */
+@media (hover: hover) and (pointer: fine) {
+    .card:hover {
+        border-color: #2e7d32;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+}
